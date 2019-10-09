@@ -8,8 +8,6 @@ ${DATABASE_API_MODULE_NAME}     psycopg2
 ${DATABASE_NAME}                jacksonviews
 ${DATABASE_HOST}                192.168.0.178
 ${DATABASE_PORT}                5432
-${DATABASE_DRIVER}              org.postgresql.Driver
-${DATABASE_URL}                 jdbc:postgresql://192.168.0.178:5432/jacksonviews
 ${DATABASE_USER}                jacksonviews
 ${DATABASE_PASS}
 
