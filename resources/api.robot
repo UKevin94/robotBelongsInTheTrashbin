@@ -3,7 +3,7 @@ Library             REST
 Documentation       This file contains all operations used with the API
 
 *** Variables ***
-${MAIN_ENDPOINT}        http://192.168.0.178:8080/api
+${MAIN_ENDPOINT}        http://127.0.0.1:8080/api
 
 
 
