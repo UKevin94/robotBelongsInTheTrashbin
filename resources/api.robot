@@ -9,12 +9,12 @@ ${MAIN_ENDPOINT}        http://127.0.0.1:8080/api
 
 *** Keywords ***
 Get API Authentification Token
-    Post                ${MAIN_ENDPOINT}/authenticate       {"username":"admin","password":"admin","rememberMe":"false"}
+    POST                ${MAIN_ENDPOINT}/authenticate       {"username":"admin","password":"admin","rememberMe":"false"}
     ${ID_TOKEN}=        Output                              $.id_token
     Set Test Variable   ${TOKEN}        ${ID_TOKEN}
 
 Check That The Injected Contact Is Present
     [Arguments]     ${firstname}        ${lastname}
-    Get             ${MAIN_ENDPOINT}/contacts/1         headers={"Authorization": "Bearer ${TOKEN}"}
+    GET             ${MAIN_ENDPOINT}/contacts/1         headers={"Authorization": "Bearer ${TOKEN}"}
     String          $.firstName         ${firstname}
     String          $.lastName          ${lastname}
