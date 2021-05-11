@@ -1,9 +1,3 @@
-*** Test Cases ***
-autogenRobotScript
-	Given I have an apple
-	When I add to other apples
-	Then I have three apple in my basket
-
 *** Keywords ***
     Given I have an apple
         Should Be Equal              bla        bla
